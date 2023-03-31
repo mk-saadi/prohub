@@ -7,7 +7,7 @@
 		"date": "March 26(8 days ago)",
 		"title": "How to get your first job as a self-taught programmer.",
 		"hash": "#programming   #beginners",
-		"read": 5
+		"readTime": 5
 	},
 	{
 		"id": 202,
@@ -17,7 +17,7 @@
 		"date": "April 31(35 days ago)",
 		"title": "Guide to Becoming successful in programmer.",
 		"hash": "#programming   #how-to-get-your-first-job",
-		"read": 12
+		"readTime": 12
 	},
 	{
 		"id": 303,
@@ -27,7 +27,7 @@
 		"date": "November 15(last year)",
 		"title": "Coding jobs. Expectations vs reality.",
 		"hash": "#coding   #beginners",
-		"read": 11
+		"readTime": 11
 	},
 	{
 		"id": 404,
@@ -35,8 +35,8 @@
 		"profile": "https://i1.sndcdn.com/avatars-isQpTzkkjxzRPrxp-yK9v3w-t500x500.jpg",
 		"name": "Kazuma Satou",
 		"date": "January 08(96 days ago)",
-		"title": "Coding history. Punch card to modern day.",
+		"title": "Coding history. Punch card to modern day Coding.",
 		"hash": "#developing   #software",
-		"read": 9
+		"readTime": 9
 	}
 ]

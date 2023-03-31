@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleCard from "./SingleCard";
 
-const Card = () => {
+const Card = ({ handleReadTime }) => {
 	const [blogs, setBlog] = useState([]);
 
 	useEffect(() => {
@@ -15,7 +15,14 @@ const Card = () => {
 			{blogs.map((blog) => (
 				<SingleCard
 					key={blog.id}
-					blog={blog}
+					profile={blog.profile}
+					hash={blog.hash}
+					readTime={blog.readTime}
+					poster={blog.poster}
+					name={blog.name}
+					title={blog.title}
+					date={blog.date}
+					handleReadTime={handleReadTime}
 				></SingleCard>
 			))}
 		</div>

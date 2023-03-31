@@ -3,10 +3,18 @@ import "./singleCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const SingleCard = (props) => {
-	const { profile, read, name, title, poster, date, hash } = props.blog;
+const SingleCard = ({
+	profile,
+	readTime,
+	name,
+	title,
+	poster,
+	date,
+	hash,
+	handleReadTime,
+}) => {
 	return (
-		<div className="p-3 rounded mb-5 shadow">
+		<div className="p-3 rounded mb-5 shadow border-5 border-danger border-top">
 			<img
 				style={{ height: "400px", width: "100%", objectFit: "cover" }}
 				className="w-100 rounded img-fluid"
@@ -24,7 +32,7 @@ const SingleCard = (props) => {
 					<p className="text-secondary">{date}</p>
 				</div>
 				<button className="ms-auto btn">
-					{read} min read <FontAwesomeIcon icon={faBookmark} />
+					{readTime} min read <FontAwesomeIcon icon={faBookmark} />
 				</button>
 			</div>
 			<h2
@@ -40,7 +48,9 @@ const SingleCard = (props) => {
 			>
 				{hash}
 			</p>
-			<button>Mark As Read</button>
+			<button onClick={() => handleReadTime(readTime)}>
+				Mark As Read
+			</button>
 			<hr />
 			<br />
 		</div>
