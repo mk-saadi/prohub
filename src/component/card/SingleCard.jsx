@@ -17,7 +17,7 @@ const SingleCard = ({
 		<div className="p-3 rounded mb-5 shadow border-5 border-danger border-top">
 			<img
 				style={{ height: "400px", width: "100%", objectFit: "cover" }}
-				className="w-100 rounded img-fluid"
+				className="rounded img-fluid"
 				src={poster}
 				alt="blog poster"
 			/>
@@ -35,13 +35,13 @@ const SingleCard = ({
 					{readTime} min read <FontAwesomeIcon icon={faBookmark} />
 				</button>
 			</div>
-			<h2
+			<h1
 				style={{
 					fontWeight: "700",
 				}}
 			>
 				{title}
-			</h2>
+			</h1>
 			<p
 				className="text-secondary my-5"
 				style={{ textDecoration: "underline", cursor: "pointer" }}

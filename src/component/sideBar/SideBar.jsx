@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const SideBar = ({ readTime }) => {
+	// console.log(readTime);
 	const [read, setRead] = useState(readTime);
 
 	useEffect(() => {
@@ -19,14 +20,20 @@ const SideBar = ({ readTime }) => {
 			>
 				<h3>
 					Time spent on read:{" "}
-					<span style={{ fontWeight: "700" }}>{read}</span>min.
+					<span
+						style={{
+							fontWeight: "700",
+						}}
+					>
+						{read}
+					</span>
+					min.
 				</h3>
 			</div>
-			<div>
-				<h3>Bookmarked Blogs:</h3>
+			<div className="bg-secondary text-white rounded p-3 mt-4 shadow border-top border-5 border-dark">
+				<h3 className="text-center">Bookmarked Blogs:</h3>
 			</div>
 		</div>
 	);
 };
-
 export default SideBar;

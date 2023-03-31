@@ -11,7 +11,7 @@ const Card = ({ handleReadTime }) => {
 	}, []);
 
 	return (
-		<div className=" m-2">
+		<div className="m-2">
 			{blogs.map((blog) => (
 				<SingleCard
 					key={blog.id}
