@@ -3,4 +3,14 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow-x: hidden;
+	padding: 6% 10% !important;
+}
+.cards-g {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+}
+*::selection {
+	color: white !important;
+	background-color: salmon !important;
 }
