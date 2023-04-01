@@ -1,10 +1,12 @@
 body {
-	font-family: "Source Code Pro", monospace;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	overflow-x: hidden;
+	justify-content: center;
+	font-family: "Source Code Pro", monospace;
+}
+.bodies {
 	padding: 6% 10% !important;
+	/* overflow-x: hidden; */
 }
 .cards-g {
 	display: grid;

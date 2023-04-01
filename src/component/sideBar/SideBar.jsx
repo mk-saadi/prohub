@@ -30,9 +30,8 @@ const SideBar = ({ readTime, titles }) => {
 				</h4>
 			</div>
 			<div className='bg-secondary text-white rounded p-3 mt-4 shadow border-top border-5 border-dark'>
-				<h3 className='text-center'>Bookmarked Blogs: </h3>
+				<h3 className='text-center'>Bookmarked Blogs:</h3>
 				<div className='bg-dark text-white rounded p-3 mt-4 shadow'>
-					<h4>show titles here</h4>
 					<ul>
 						{titles.map((title, index) => (
 							<li key={index}>{title}</li>

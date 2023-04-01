@@ -30,30 +30,32 @@ function App() {
 	};
 
 	return (
-		<div className='mx-5 App'>
-			<Header></Header>
-			<div className='main row '>
-				<div className='home-container col-md-8 col-sm-12'>
-					<Card
-						handleReadTime={handleReadTime}
-						handleTitle={handleTitle}
-					></Card>
+		<>
+			<div className='mx-5 App bodies'>
+				<Header></Header>
+				<div className='main row '>
+					<div className='home-container col-md-8 col-sm-12'>
+						<Card
+							handleReadTime={handleReadTime}
+							handleTitle={handleTitle}
+						></Card>
+					</div>
+					<div className='col-md-4'>
+						<SideBar
+							readTime={readTime}
+							titles={titles}
+						></SideBar>
+					</div>
 				</div>
-				<div className='col-md-4'>
-					<SideBar
-						readTime={readTime}
-						titles={titles}
-					></SideBar>
-				</div>
+				<br />
+				<hr />
+				<br />
+				<Blog></Blog>
+				<br />
+				<br />
 			</div>
-			<br />
-			<hr />
-			<br />
-			<Blog></Blog>
-			<br />
-			<br />
 			<Footer></Footer>
-		</div>
+		</>
 	);
 }
 
