@@ -7,11 +7,12 @@ const SingleCard = ({
 	profile,
 	readTime,
 	name,
-	title,
+	readCount,
 	poster,
 	date,
 	hash,
 	handleReadTime,
+	handleCount,
 }) => {
 	return (
 		<div className="p-3 rounded mb-5 shadow border-5 border-danger border-top">
@@ -31,7 +32,10 @@ const SingleCard = ({
 					<p>{name}</p>
 					<p className="text-secondary">{date}</p>
 				</div>
-				<button className="ms-auto btn">
+				<button
+					onClick={() => handleCount(readCount)}
+					className="ms-auto btn"
+				>
 					{readTime} min read <FontAwesomeIcon icon={faBookmark} />
 				</button>
 			</div>
@@ -40,7 +44,7 @@ const SingleCard = ({
 					fontWeight: "700",
 				}}
 			>
-				{title}
+				{readCount}
 			</h1>
 			<p
 				className="text-secondary my-5"

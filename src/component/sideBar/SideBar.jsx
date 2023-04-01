@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 
-const SideBar = ({ readTime }) => {
-	// console.log(readTime);
+const SideBar = ({ readTime, readCount }) => {
 	const [read, setRead] = useState(readTime);
+	const [counts, setCount] = useState(readCount);
 
 	useEffect(() => {
 		const getReadTime = localStorage.getItem("readTime");
 		setRead(getReadTime);
 	}, [readTime]);
+
+	useEffect(() => {
+		const getCount = localStorage.getItem("readCount");
+		setCount(getCount);
+	}, [readCount]);
 
 	return (
 		<div className="position-sticky sticky-top">
@@ -31,7 +36,15 @@ const SideBar = ({ readTime }) => {
 				</h3>
 			</div>
 			<div className="bg-secondary text-white rounded p-3 mt-4 shadow border-top border-5 border-dark">
-				<h3 className="text-center">Bookmarked Blogs:</h3>
+				<h3 className="text-center">Bookmarked Blogs: </h3>
+				<div className="bg-secondary text-white rounded p-3 mt-4 shadow border-top border-5 border-dark">
+					<h3 className="text-center">Bookmarked Blogs: </h3>
+					<ul>
+						{counts.map((c) => (
+							<li>{c.count}</li>
+						))}
+					</ul>
+				</div>
 			</div>
 		</div>
 	);

@@ -8,7 +8,7 @@ const Header = () => {
 					Pro
 					<span
 						style={{ color: "rgb(50, 50, 50)" }}
-						className="bg-warning rounded px-2 ms-1"
+						className="bg-danger text-white rounded px-2 ms-1"
 					>
 						hub
 					</span>

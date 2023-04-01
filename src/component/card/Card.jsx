@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleCard from "./SingleCard";
 
-const Card = ({ handleReadTime }) => {
+const Card = ({ handleReadTime, handleCount }) => {
 	const [blogs, setBlog] = useState([]);
 
 	useEffect(() => {
@@ -20,9 +20,10 @@ const Card = ({ handleReadTime }) => {
 					readTime={blog.readTime}
 					poster={blog.poster}
 					name={blog.name}
-					title={blog.title}
+					readCount={blog.readCount}
 					date={blog.date}
 					handleReadTime={handleReadTime}
+					handleCount={handleCount}
 				></SingleCard>
 			))}
 		</div>
