@@ -3,15 +3,25 @@ import React from "react";
 const Blog = () => {
 	return (
 		<div>
-			<div className="bg-dark text-white p-3 rounded shadow">
-				<div className="bg-secondary rounded shadow my-4 py-2 px-3">
-					<h5 className="fs-2">
+			<div className='bg-dark text-white p-3 rounded shadow'>
+				<div className='bg-secondary rounded shadow my-4 py-2 px-3'>
+					<h5
+						className='fs-2'
+						style={{
+							textShadow: "rgb(100, 100, 100) 1.3px 3px 3px",
+						}}
+					>
 						Difference between{" "}
-						<span className="text-danger fw-bold">props</span> and{" "}
-						<span className="text-danger fw-bold">state</span>?
+						<span className='text-danger fw-bold'>props</span> and{" "}
+						<span className='text-danger fw-bold'>state</span>?
 					</h5>
 					<hr />
-					<h5 className="ms-5">
+					<h5
+						className='ms-5'
+						style={{
+							textShadow: "rgb(100, 100, 100) 1.3px 3px 3px",
+						}}
+					>
 						In React, props and state are both used to manage data
 						in a component, but they serve different purposes. Props
 						are used to pass data from a parent component to a child
@@ -24,14 +34,19 @@ const Blog = () => {
 						such as user input or the results of an API call.
 					</h5>
 				</div>
-				<div className="bg-secondary rounded shadow my-4 py-2 px-3">
-					<h5 className="fs-2">
+				<div className='bg-secondary rounded shadow my-4 py-2 px-3'>
+					<h5
+						className='fs-2'
+						style={{
+							textShadow: "rgb(100, 100, 100) 1.3px 3px 3px",
+						}}
+					>
 						How does{" "}
-						<span className="text-danger fw-bold">useState</span>{" "}
+						<span className='text-danger fw-bold'>useState</span>{" "}
 						work?
 					</h5>{" "}
 					<hr />
-					<h5 className="ms-5">
+					<h5 className='ms-5'>
 						useState is a React hook that allows functional
 						components to manage their own state. It takes an
 						initial state value as input and returns an array
@@ -44,14 +59,19 @@ const Blog = () => {
 						component to pass down data as props.
 					</h5>
 				</div>
-				<div className="bg-secondary rounded shadow my-4 py-2 px-3">
-					<h5 className="fs-2">
+				<div className='bg-secondary rounded shadow my-4 py-2 px-3'>
+					<h5
+						className='fs-2'
+						style={{
+							textShadow: "rgb(100, 100, 100) 1.3px 3px 3px",
+						}}
+					>
 						What can{" "}
-						<span className="text-danger fw-bold">useState</span> do
+						<span className='text-danger fw-bold'>useState</span> do
 						apart from loading data?
 					</h5>{" "}
 					<hr />
-					<h5 className="ms-5">
+					<h5 className='ms-5'>
 						useEffect is a React hook that allows functional
 						components to perform side effects. It is often used to
 						fetch data from APIs and update the component state, but
@@ -65,14 +85,19 @@ const Blog = () => {
 						write complex class-based component methods.
 					</h5>
 				</div>
-				<div className="bg-secondary rounded shadow my-4 py-2 px-3">
-					<h5 className="fs-2">
+				<div className='bg-secondary rounded shadow my-4 py-2 px-3'>
+					<h5
+						className='fs-2'
+						style={{
+							textShadow: "rgb(100, 100, 100) 1.3px 3px 3px",
+						}}
+					>
 						How does{" "}
-						<span className="text-danger fw-bold">REACT.JS</span>{" "}
+						<span className='text-danger fw-bold'>REACT.JS</span>{" "}
 						work?
 					</h5>{" "}
 					<hr />
-					<h5 className="ms-5">
+					<h5 className='ms-5'>
 						React is a JavaScript library for building user
 						interfaces. It works by creating a virtual
 						representation of the UI, which is then rendered to the
