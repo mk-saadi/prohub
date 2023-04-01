@@ -6,7 +6,6 @@ body {
 }
 .bodies {
 	padding: 6% 10% !important;
-	/* overflow-x: hidden; */
 }
 .cards-g {
 	display: grid;

@@ -16,13 +16,6 @@ const Card = ({ handleReadTime, handleTitle }) => {
 				<SingleCard
 					blog={blog}
 					key={blog.id}
-					// profile={blog.profile}
-					// hash={blog.hash}
-					// readTime={blog.readTime}
-					// poster={blog.poster}
-					// name={blog.name}
-					// title={blog.title}
-					// date={blog.date}
 					handleReadTime={handleReadTime}
 					handleTitle={handleTitle}
 				></SingleCard>
