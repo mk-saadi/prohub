@@ -3,16 +3,10 @@ import React, { useEffect, useState } from "react";
 const SideBar = ({ readTime, titles }) => {
 	const [read, setRead] = useState(readTime);
 
-	const [title, setTitles] = useState("");
 	useEffect(() => {
 		const getReadTime = localStorage.getItem("readTime");
 		setRead(getReadTime);
 	}, [readTime]);
-
-	useEffect(() => {
-		const newTitle = titles;
-		setTitles(newTitle);
-	}, [titles]);
 
 	return (
 		<div className='position-sticky sticky-top'>
@@ -23,7 +17,7 @@ const SideBar = ({ readTime, titles }) => {
 					color: "white",
 				}}
 			>
-				<h3>
+				<h4>
 					Time spent on read:{" "}
 					<span
 						style={{
@@ -33,12 +27,17 @@ const SideBar = ({ readTime, titles }) => {
 						{read}
 					</span>
 					min.
-				</h3>
+				</h4>
 			</div>
 			<div className='bg-secondary text-white rounded p-3 mt-4 shadow border-top border-5 border-dark'>
 				<h3 className='text-center'>Bookmarked Blogs: </h3>
 				<div className='bg-dark text-white rounded p-3 mt-4 shadow'>
-					<li>{title}</li>
+					<h4>show titles here</h4>
+					<ul>
+						{titles.map((title, index) => (
+							<li key={index}>{title}</li>
+						))}
+					</ul>
 				</div>
 			</div>
 		</div>
