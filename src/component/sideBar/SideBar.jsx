@@ -3,20 +3,15 @@ import React, { useEffect, useState } from "react";
 const SideBar = ({ readTime, titles }) => {
 	const [read, setRead] = useState(readTime);
 
-	const [title, setTitles] = useState([]);
+	const [title, setTitles] = useState("");
 	useEffect(() => {
 		const getReadTime = localStorage.getItem("readTime");
 		setRead(getReadTime);
 	}, [readTime]);
 
-	// useEffect(() => {
-	// 	const getCount = localStorage.getItem("readCount");
-	// 	setCount(getCount);
-	// }, [readCount]);
 	useEffect(() => {
 		const newTitle = titles;
 		setTitles(newTitle);
-		console.log(newTitle);
 	}, [titles]);
 
 	return (
@@ -43,7 +38,7 @@ const SideBar = ({ readTime, titles }) => {
 			<div className='bg-secondary text-white rounded p-3 mt-4 shadow border-top border-5 border-dark'>
 				<h3 className='text-center'>Bookmarked Blogs: </h3>
 				<div className='bg-dark text-white rounded p-3 mt-4 shadow'>
-					<p>{title}</p>
+					<li>{title}</li>
 				</div>
 			</div>
 		</div>
