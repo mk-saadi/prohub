@@ -8,7 +8,7 @@ import Blog from "./component/blog/Blog";
 import Footer from "./footer/Footer";
 
 function App() {
-	const [readTime, setReadTime] = useState("");
+	const [readTime, setReadTime] = useState(0);
 	const [titles, setTitles] = useState([]);
 
 	const handleReadTime = (time) => {

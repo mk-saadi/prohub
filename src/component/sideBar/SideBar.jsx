@@ -34,7 +34,12 @@ const SideBar = ({ readTime, titles }) => {
 				<div className='bg-dark text-white rounded p-3 mt-4 shadow'>
 					<ul>
 						{titles.map((title, index) => (
-							<li key={index}>{title}</li>
+							<li
+								className='py-2'
+								key={index}
+							>
+								{title}
+							</li>
 						))}
 					</ul>
 				</div>
